@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../avenir/avenir.css"> 
+    <link rel="stylesheet" href="../css/grid.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+        <nav>
+            <ul>
+                <li id="logo"><a href="#landing"><img src="img/landing/sm-logo.png"/></a></li>
+                <li><label id="cart-icon" for="showForm" class="showFormLabel"><span class="icon-cart"></span>Cart<span class="simpleCart_quantity"></span></label></li>
+                <div id="nav" class="row">
+                        <li class="nav-item"><a href="#fuel">The Fuel</a></li>
+                        <li class="nav-item"><a href="#good">The good</a></li>
+                        <li class="nav-item"><a href="#coffee">Coffee</a></li>
+                        <li class="nav-item"><a href="#kits">Kits</a></li>
+                        <li class="nav-item"><a href="#instructions">Instructions</a></li>
+                </div><!-- end row -->
+            </ul>
+        </nav>
+
+        <input type="checkbox" name="showForm" id="showForm" class="showForm">
+
+        <div class="form">
+            <h5>Coffee name here</h5>
+            <label for="showForm" class="closeFormLabel">X</label>
+            <button type="submit" id="remove-button" class="sendForm">Remove</button>
+
+            <form id="cart-form">
+                    <h5>Your Information</h5>
+                    <input type="text" name="name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+
+                <div>
+                    <h5>Total</h5>
+                </div>
+                
+                <button type="submit" id="checkout-button" class="sendForm">Checkout</button>
+                <button type="submit" id="empty-button" class="sendForm">Empty Cart</button>
+            </form>
+
+            <h5>Your coffee will be avalible every Thursday for pick-up</h5>
+        </div>
+
+
+</body>
+
+</html>

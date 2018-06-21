@@ -1,0 +1,248 @@
+
+/*p {
+  padding: .5em 0;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+@media (max-width: 35em) {
+  .left,
+  .right {
+    float: left;
+    clear: left;
+  }
+}
+*/
+
+.form {
+  width: 0;
+  height: 0;
+  margin-left: 5%;
+  background: #fff;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: height .5s ease, width .5s ease .5s;
+          transition: height .5s ease, width .5s ease .5s;
+}
+.form h5 {
+  /*text-align: center;
+  color: #333;
+  font-size: 2rem;*/
+  margin: 20px;
+}
+
+/*.form form {
+  max-height: 100%;
+  height: auto;
+}
+*/
+form button {
+    border: none;
+    font-family: 'AvenirLTStd-Black', helvetica;
+    font-size: 0.938em;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+
+#remove-button {
+    height: 20px;
+    width: 75px;
+    color: #fff;
+    background-color: #F33F13;
+    font-size: 0.688em;
+    padding: 2px;
+    margin-left: 20px;
+}
+
+#checkout-button, #empty-button {
+    height: 32px;
+    width: 104px;
+    font-size: 0.688em;
+    margin-left: 20px;
+}
+
+#checkout-button { background-color: #ECFF1B; color: #000; }
+
+#empty-button { background-color: #F33F13; color: #fff; }
+
+/*
+.form .section {
+  width: 40%;
+  margin: 0 5%;
+  height: calc(100% - 5rem);
+  max-height: 100%;
+}
+
+@media (max-width: 35em) {
+  .form .section {
+    width: 90%;
+    height: auto;
+  }
+}
+*/
+
+.form ::-webkit-input-placeholder,
+.form :-moz-placeholder,
+.form ::-moz-placeholder,
+.form :-ms-input-placeholder {
+  color: #999;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 95%;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #B8B7B7;
+    outline: none;
+    color: #333;
+    margin: 0 auto;
+    display: table;
+    -webkit-transition: border-color .5s ease;
+          transition: border-color .5s ease;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+    border-color: #333;
+}
+
+.form input[type="text"]::invalid,
+.form input[type="email"]::invalid,
+.form textarea::invalid {
+    border-color: #B31B1B;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/*.form textarea {
+  resize: none;
+  height: 10rem;
+  line-height: 1.5rem;
+}
+
+/*@media (max-width: 35em) {
+  .form textarea {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
+  }
+}
+
+.form .closeFormLabel,
+.form .sendForm {
+  /*position: absolute;
+  bottom: 1rem;
+  width: 40%;
+  margin: 0 5%;
+  right: 0;
+  text-align: center;
+  border: 1px solid #999;
+  padding: .5rem;
+  background: inherit;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-transition: background-color .5s ease, border-color .5s ease;
+          transition: background-color .5s ease, border-color .5s ease;*/
+}
+
+.form .closeFormLabel:hover, .form .closeFormLabel:focus,
+.form .sendForm:hover,
+.form .sendForm:focus {
+  /*background-color: #cccccc;
+  border-color: #333;*/
+}
+
+/*@media (max-width: 35em) {
+  .form .closeFormLabel,
+  .form .sendForm {
+    position: relative;
+    width: 90%;
+    left: 0;
+    margin-top: 1em;
+  }
+}
+*/
+
+.form .closeFormLabel {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+/*@media (max-width: 35em) {
+  .form .closeFormLabel {
+    bottom: 1rem;
+  }
+}
+*/
+
+input.showForm {
+  display: none;
+}
+
+input.showForm:checked + .form {
+  width: 90%;
+  height: 85%;
+  box-shadow: 4px 5px 5px 5px #a5a5a5;
+  overflow: auto;
+  -webkit-transition: width .5s ease, height .5s ease .5s;
+          transition: width .5s ease, height .5s ease .5s;
+}
+
+.showFormLabel {
+  cursor: pointer;
+  /*display: block;
+  position: absolute;
+  bottom: 10%;
+  left: 25%;
+  width: 50%;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #333;
+  border: 1px solid #999;
+  background: inherit;
+  z-index: 1;
+  -webkit-transition: background-color .5s ease, border-color .5s ease;
+          transition: background-color .5s ease, border-color .5s ease;*/
+}
+.showFormLabel:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 35em) {
+  .form form {
+    height: auto;
+  }
+}
+
+
+
+/*@media (max-width: 35em) {
+  .showFormLabel {
+    width: 90%;
+    left: 5%;
+  }
+}
+*/
+
+
+
