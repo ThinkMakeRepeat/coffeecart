@@ -45,7 +45,7 @@ nav {
 	background-color: #51C8CF;
   	left: 0px;
   	top: 0px;
-  	z-index: 2;
+  	z-index: 333;
 }
 
 nav li.nav-item {
@@ -62,7 +62,7 @@ nav li.nav-item {
 }
 #logo h1 {
     display: inline-block;
-    font-size: 1.6em;
+    font-size: 1.8em; 
     float: left;
     line-height: 65px;
     margin: 0;
