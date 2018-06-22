@@ -56,7 +56,32 @@ nav li.nav-item {
 	top: 28px;
 	text-align: center;
 }
-
+#logo {
+    position: relative;
+    padding-left: 130px; 
+}
+#logo h1 {
+    display: inline-block;
+    font-size: 1.4em;
+    float: left;
+    line-height: 65px;
+    margin: 0;
+}
+#logo span {
+    font-size: 6px;
+    color: white;
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    z-index: 22;
+}
+#logo img {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    z-index: 0;
+    height: 50px;
+}
 nav a {
 	color: #000;
 	font-family: 'AvenirLTStd-Medium', helvetica;
@@ -97,7 +122,7 @@ nav li.nav-item:hover:before {
 
 #nav ul { display: flex; flex-direction: row; }
 
-#logo { float: left; padding-left: 10px; }
+#logo { float: left; }
 
 #cart-icon { float: right; margin: 27px; }
 
